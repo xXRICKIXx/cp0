@@ -17,11 +17,11 @@ header {
     padding: 10px;
 }
 
-header nav {
+header h1 img {
     display: flex;
     align-items: center;
     gap: 20px;
-    
+
 }
 
 header ul {
