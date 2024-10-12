@@ -5,8 +5,9 @@
     box-sizing: border-box;
 }   
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito';
     font-size: 16px;
+    font-weight: 600;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -46,7 +47,7 @@ header img{
     margin: 10px;
     background-color: white;
     padding: 20px;
-    text-align: justify;
+    text-align: center;
 }
 .about-section{
     margin: 10px auto;
