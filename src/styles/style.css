@@ -1,11 +1,13 @@
 /* css da pagina principal */
+/* fontes Open sans importada do google tem q colocar nas outras paginas se for continuar com essa fonte  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }   
 body {
-    font-family: 'Nunito';
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
     background-color: #f4f4f4;

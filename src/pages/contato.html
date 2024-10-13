@@ -9,35 +9,74 @@
 </head>
 
 <body>
-  
-  <div class="container" id="contato">
-    <h1>Contato</h1>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" required minlength="2"><br><br>
-       
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" required ><br><br>
-        
-        <label for="phone">Telefone:</label><br>
-        <input type="tel" id="phone" required><br>
+    <header>
+        <div class="menu-section">
+            <div class="logo">
+                <img src="/src/images/logo_pacotinho.png" alt="Logo do Projeto" width="100px">
+            </div>
+            <h1 class="txt-logo">Pacotinho de Amor</h1>
+        </div>
+        <div class="options">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Doações/Voluntariado</a></li>
+                <li><a href="#">Adotar</a></li>
+                <li><a href="#">Adotei e agora</a></li>
+                <li><a href="/src/pages/contato.html">Contato</a></li>
+            </ul>
+        </div>  
+    </header>
+    
+    <main>
+        <h1>Contato</h1>
+        <section class="social-section">
+            
+            <h2>Siga nossas redes sociais !</h2>
+            <div class="icon-section">
+                <a  href="https://www.instagram.com/projeto.pacotinhodeamor" target="_blank" >
+                    <img src="/src/images/instagram (1).png" alt="Instagram-logo" width="50px" height="50px"id="instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100078099393909" target="_blank" >
+                    <img src="/src/images/facebook.png" alt="Facebook-logo" width="50px" height="50px" id="facebook">
+                </a>
+            </div>
+        </section>
+        <section class="formulario-section">
+            <h2>Envie uma mensagem !</h2>
+            <form >
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" placeholder="Nome" required minlength="2"><br><br>
 
-        <label for="assunto">Assunto:</label>
-            <select id="assunto" required>
-                <option value="adocao">Adoção</option>
-                <option value="ajudar">Como ajudar?</option>
-                <option value="prox">Próximos eventos</option>
-                <option value="suges">Sugestões</option>
-                <option value="outros">Outros</option>
-            </select>
-       
-        <label for="mensagem" required>Mensagem:</label><br>
-        <textarea id="mensagem" rows="4" cols="50"></textarea><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="E-mail" required><br><br>
 
-        <button id="btn-Envia" onclick="Enviar()">Enviar</button>
-        
-    <p>Siga-nos no Instagram: <a href="https://www.instagram.com/projeto.pacotinhodeamor?igsh=Y2Zicjc5bG16NDIw">Instagram</a></p>
-    <p>Whatsapp: <a hrrf="https://wa.me/5511994896555"> Whatsapp</a></p>
-</div>
-<script src="/src/scripts/script.js"></script>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" placeholder="(00) 00000-0000" required><br><br>
+
+                <label for="assunto">Assunto:</label><br>
+                <select id="assunto" required>
+                    <option value="adocao">Adoção</option>
+                    <option value="ajuda">Como ajudar?</option>
+                    <option value="prox">Próximos eventos</option>
+                    <option value="suges">Sugestões</option>
+                    <option value="outros">Outros</option>
+                </select><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" rows="4" cols="50" placeholder="Mensagem"></textarea><br><br>
+                
+                <button type="submit" id="btn-Envia" class="btn" onclick="Enviar()">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Projeto Pacotinho de Amor. Todos os direitos reservados.</p>
+        <p>Tel: (11) 99489-6555</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/projeto.pacotinhodeamor" target="_blank">Instagram</a> | 
+            <a href="https://www.facebook.com/profile.php?id=100078099393909" target="_blank">Facebook</a>
+        </div>
+    </footer>
+    <script src="/src/scripts/script.js"></script>
 </body>
 </html>

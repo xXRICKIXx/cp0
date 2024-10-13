@@ -13,7 +13,7 @@ function Enviar() {
         alert("O email não pode ficar vazio.");
 
     }
-    else if (phone === ""){
+    else if (telefone === ""){
         alert("O telefone não pode ficar vazio.");
         
     }
@@ -26,9 +26,27 @@ function Enviar() {
         
     }
     else{
+        switch(assunto){
+            case 'adocao':
+                assunto = 'Adoção';
+                break;
+            case 'ajuda':
+                assunto = 'Ajuda';
+                break;
+            case 'prox':
+                assunto = 'Próximos Eventos';
+                break;
+            case 'suges':
+                assunto = 'Sugestões';
+                break;
+            case 'outros':
+                assunto = 'Outros';
+                break;
+            default:
+                assunto = 'INVALIDO';
+                break;
+        }
             window.alert(
-        `Informações preenchidas:\n\nNome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\nMensagem: ${mensagem}\n\nEnviado com sucesso!`);
+        `Informações preenchidas:\n Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\nMensagem: ${mensagem}\n\nEnviado com sucesso!`);
     }
-
- 
 }
